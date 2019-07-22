@@ -255,4 +255,10 @@ a:visited {
 .main-container .weather-content ul li {
   margin: 0 10;
 }
+
+@media (max-width: 1175px) {
+  body {
+    display: none;
+  }
+}
 /*# sourceMappingURL=project1.css.map */

@@ -186,5 +186,10 @@ a {
         }
     }
 
+}
 
+@media (max-width: 1175px) {
+    body {
+        display: none;
+    }
 }
