@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #183485;
+  background: -webkit-gradient(linear, left top, left bottom, from(#183485), color-stop(39%, #3d679c), color-stop(71%, #5c96ae), to(#41adf2));
+  background: linear-gradient(180deg, #183485 0%, #3d679c 39%, #5c96ae 71%, #41adf2 100%);
+  -webkit-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.4);
+}
+
+.main-container .tasks-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  height: 40vh;
+}
+
+.main-container .tasks-content .tasks-container {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-container .tasks-content .tasks-container h2 {
+  margin: 30px 100px;
+}
+
+.main-container .tasks-content .tasks-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 100px;
+}
+
+.main-container .tasks-content .tasks-container ul li {
+  margin: 2;
+}
+
+.main-container .tasks-content .tasks-container ul li #removeButton {
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid white;
+  background: transparent;
+  padding: 5 10;
+  margin-left: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-container .tasks-content .add-container {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .tasks-content .add-container h2 {
+  display: inline-block;
+  text-shadow: 5px 5px 5px -2px black;
+}
+
+.main-container .tasks-content .add-container h2 i {
+  border: 1px solid rgba(255, 255, 255, 0.418);
+  padding: 10 12;
+  border-radius: 50%;
+}
+
+.main-container .tasks-content .add-container .add-btn-txt {
+  margin-left: 10px;
+}
+
+.main-container .tasks-content .add-container .input-display {
+  visibility: hidden;
+}
+
+.main-container .tasks-content .add-container .add-input-container {
+  width: 80%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.329);
+  border-radius: 2%;
+  position: relative;
+  left: -32.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input {
+  color: white;
+  position: relative;
+  width: 70%;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input input {
+  border: none;
+  padding: 5;
+  background: transparent;
+  outline: none;
+  display: inline-block;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input input::-webkit-input-placeholder {
+  color: white;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input input:-ms-input-placeholder {
+  color: white;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input input::-ms-input-placeholder {
+  color: white;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input input::placeholder {
+  color: white;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input input:focus {
+  color: white;
+}
+
+.main-container .tasks-content .add-container .add-input-container .add-todo-input button {
+  outline: none;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 5 10;
+  margin: 5;
+  color: white;
+  cursor: pointer;
+}
+
+.main-container .weather-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(128, 128, 128, 0.664);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-container .weather-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .weather-content div .heute-temp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 10;
+}
+
+.main-container .weather-content div .heute-temp h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 5 0;
+  padding: 1 15;
+  border-radius: 5px;
+  background-color: rgba(80, 80, 80, 0.418);
+}
+
+.main-container .weather-content div .heute-temp h2 {
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-container .weather-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .weather-content ul li {
+  margin: 0 10;
+}
+/*# sourceMappingURL=project1.css.map */

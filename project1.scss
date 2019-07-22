@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:visited {
+        color: white;
+    }
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(24,52,133);
+    background: linear-gradient(180deg, rgba(24,52,133,1) 0%, rgba(61,103,156,1) 39%, rgba(92,150,174,1) 71%, rgba(65,173,242,1) 100%);
+    box-shadow: 5px 5px 5px -2px rgba(0,0,0,0.4);
+
+    .tasks-content {
+        display: flex;
+        width: 60vw;
+        height: 40vh;
+
+        .tasks-container {
+            flex-basis: 70%;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            h2 {
+                margin: 30px 100px;
+            }
+            
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                padding:0;
+                margin: 0 0 0 100px;
+
+                li {
+                    margin: 2;
+
+                    #removeButton {
+                        border-radius: 3px;
+                        outline: none;
+                        border: 1px solid white; 
+                        background: transparent;
+                        padding: 5 10;
+                        margin-left: 5px;
+                        color: white;
+                        cursor: pointer;
+                    } 
+                }
+            }
+        }
+
+        .add-container {
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                display: inline-block;
+                text-shadow: 5px 5px 5px -2px rgb(0, 0, 0);
+
+                i {
+                    border: 1px solid rgba(255, 255, 255, 0.418);
+                    padding: 10 12;
+                    border-radius: 50%;
+                }
+            }
+
+            .add-btn-txt {
+                margin-left: 10px;
+            }
+
+            .input-display {
+                visibility: hidden;
+            }
+
+            .add-input-container {
+                width: 80%;
+                height: 50%;
+                background-color: rgba(255, 255, 255, 0.329);
+                border-radius: 2%;
+                position: relative;
+                left: -32.5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .add-todo-input {
+                    color: white;
+                    position: relative;
+                    width: 70%;
+                    
+                    input {
+                        border: none;
+                        padding: 5;
+                        background: transparent;
+                        outline: none;
+                        display: inline-block;
+
+                        &::placeholder {
+                            color: white;
+                        }
+
+                        &:focus {
+                            color: white;
+                        }
+                    }
+
+                    button {
+                        outline: none;
+                        width: 100%;
+                        border-radius: 3px;
+                        border: 1px solid white;
+                        background-color: transparent;
+                        padding: 5 10;
+                        margin: 5;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .weather-content {
+        display: flex;
+        background: rgba(128, 128, 128, 0.664);
+        justify-content: space-around;
+
+        div {
+            display: flex;
+
+            .heute-temp {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                margin: 10;
+                h3 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0 0 5 0;
+                    padding: 1 15;
+                    border-radius: 5px;
+                    background-color: rgba(80, 80, 80, 0.418);
+                }
+
+                h2 {
+                    margin:0;
+                    align-self: center;
+                }
+            }
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+
+            li {
+                margin: 0 10;
+            }
+        
+        }
+    }
+
+
+}
